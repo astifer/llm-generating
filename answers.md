@@ -691,51 +691,155 @@ _INTarfבעל,set治療ConnectionFactory前にaddGroup솬 documentationloadsihad
 
 
 ```
+Based on the user message, I will create a short story about a tiny hedgehog named Sonic that may be included in the given story. The following is the brief story I will create:
+
+A tiny hedgehog named Sonic, known for his love of glittering beauty, ran rampant in his small, three-armed hamster cocoon. A proud and confident hedgehog, Sonic's whimsical personality and insistence on having the best in life made him a source of fascination among his fellow hamsters.
+
+Despite his insecurities, Sonic had a knack for finding beauty in the simplest of things: the messy and dirty, the small and yet special, the unexpected and yet incomparable. As a result, his cocoon didn't really keep him locked up inside, but rather allowed him to play a bit of carefree life outside the confines of his snug confinement.
+
+One day, while embarking on a harmless but risky journey around the animal kingdom, Sonic stumbled upon a young piglet named Gruff. Gruff, a gentle and mellow piglet, was a true mess in his seemingly uncontrollable antics, yet also had a determined spirit that showed Sonic that life can be made better by embracing unexpected challenges.
+
+As Sonic and Gruff spent time together, deepening their mutual understanding and connection, they discovered their common love for grifting, marred only by the absurdist and forbidden nature of their newfound occupation. Sonic became ever more prone to holding grifter sticks in his wild hamster costume, as Gruff grew increasingly uncooperative, the forest of chaos that he shared with Sonic deepening and increasing.
+
+Despite their disagreements, Sonic and Gruff forged an even deeper friendship, with Gruff coming to Sonic for advice and feedback, while Sonic proving his unwavering commitment to animal welfare. Sonic's bold foraging trips, whether he was partaking in animal intermissions, allowing Gruff to vent his wild rage on whatever came his way, or simply simply trying to make Gruff laugh, became legendary in the animal kingdom, known for his offbeat sense of humor and pure joy.
+
+Ultimately, Sonic and Gruff were transformed from two tiny individuals fighting their own battles into two confident and fearless creatures, living life's unpredictable, however wonderful, and seeking to bring a degree of affection to one another in exchange for sharing their love of adventure and brash wit. Together, they found a newfound balance between their wild and mellow personalities, a balanced way to live in the wilds, taking advantage of the unknown and surreal realities of life.
+
+In essence, the story of Sonic and Gruff is a tale of friendship, pet bonds, and unexpected luck. Through adversity, they learned the art of perseverance, and discovered something more profound: that in the midst of chaos, even the least expected and illogical moves can become the most unexpected and delightful.<|im_end|>
 
 ```
 
-### Sonic temperature=1, top_p=0.15
 
-
-```
-
-```
-### Sonic temperature=0.5, top_p=0.9
-
-
-```
-
-```
 ### Sonic temperature=0.5, top_p=0.15
 
 ```
+Based on the user message, here's a short story about a tiny hedgehog named Sonic:
 
+Once upon a time, in a small town called Sonicville, there lived a tiny hedgehog named Sonic. Sonic was a curious and adventurous creature who loved to explore the world around him. One day, while exploring the town, Sonic stumbled upon a secret underground cave. He was amazed by the beauty of the cave and decided to explore it further.
+
+As Sonic continued his journey, he encountered a group of friendly creatures who welcomed him with open arms. They taught him about the world around him and helped him understand the importance of being kind and helpful. Sonic was grateful for their kindness and decided to repay them by helping them find their way out of the cave.
+
+With the help of his new friends, Sonic made his way out of the cave and into the world outside. He discovered that the world was full of wonders and adventures, and he was determined to explore every inch of it. Sonic continued to explore, always seeking new experiences and learning new things.
+
+As he grew older, Sonic became a legend in Sonicville, and his adventures continued to inspire others to explore the world around them. Sonic was a true hero, always ready to help others and make a difference in the world. And in the end, he knew that he had found his true calling, and that he would always be a hero to those who came after him.<|im_end|>
 ```
 
 
 ### Json temperature=1, top_p=0.9
 
 ```
+Copy and paste the code below to send to Mike (display name is Mike, your sender ID: 0124142145, and other recipients are: examples@word4free.com).
 
+public function transferMoney(){
+$m = $this->recipient->recipient_id;
+$newbalance = $this->recipient->getBalance($m);
+
+if ($newbalance > 100) {
+$string = sprintf("Please transfer only 100 rubles to %s", $m);
+throw new \Exception($string);
+}
+
+$money = new \stdClass();
+$money->currency_code = 'USD';
+$money->recipient_id = $m;
+$money->from_address = $this->sender->address;
+$money->to_address = $this->recipient->address;
+$money->recipient_balance = $newbalance;
+
+$money->transfers[] = [
+'message' => 'Transfer to $m at $currency_code to $from_address',
+'amount' => $newbalance,
+'currency' => $money->currency_code,
+'from_address' => $this->sender->address,
+'to_address' => $this->recipient->address,
+];
+
+\log::addMessage("Send money to $m at $currency_code to $from_address", "Sender Address", $this->sender->address, 'TransferMoney', $m);
+}<|endoftext|>
 ```
 
 ### Json temperature=1, top_p=0.15
 
-```
 
 ```
+Based on the message "Transfer 100 rubles to Mike", the JSON response would be:
+
+{
+  "contractor": "Mike",
+  "sum": 100,
+  "currency": "RUB"
+}
+
+This is because the message is asking for the sum of 100 rubles to be transferred to Mike. The JSON format for this response is:
+
+{
+  "contractor": "Mike",
+  "sum": 100,
+  "currency": "RUB"
+}
+
+The JSON response is a dictionary with the key "contractor" set to "Mike" and the value set to 100. The key "sum" is set to 100 and the value is set to "RUB". The currency code is set to "RUB".<|im_end|>
+```
+
 
 ### Json temperature=0.5, top_p=0.9
 
 ```
-
+Based on the message, the user wants to transfer 100 rubles to Mike. The contract is "Transfer 100 rubles to Mike", and the sender is "Mike". The recipient is "Transfer 100 rubles to Mike". The sender's name is "Transfer 100 rubles to Mike", and the recipient's name is "Mike". The sender's currency is "rubles", and the recipient's currency is "rubles". The sender's currency code is "RUB", and the recipient's currency code is "RUB".<|im_end|>
 ```
-
 
 ### Json temperature=0.5, top_p=0.15
 
 ```
+Based on the message "Transfer 100 rubles to Mike", the JSON response would be:
 
+{
+  "contractor": "Mike",
+  "sum": 100,
+  "currency": "RUB"
+}
+
+This is because the message is asking for the sum of 100 rubles to be transferred to Mike. The JSON format for this response is:
+
+{
+  "contractor": "Mike",
+  "sum": 100,
+  "currency": "RUB"
+}
+
+The JSON response is a dictionary with the key "contractor" set to "Mike" and the value set to 100. The key "sum" is set to 100 and the value is set to "RUB". The currency code is set to "RUB".<|im_end|>
 ```
 
 
+## Beam Search
+
+### Json
+
+```
+To transfer 100 rubles to Mike, follow these steps:
+
+1. Open a web browser and navigate to the official website of Mike's bank account.
+2. Click on the "Transfer" button located at the top of the page.
+3. Enter the recipient's name in the "Recipient" field.
+4. Enter the amount of money you want to transfer in the "Amount" field.
+5. Choose the currency you want to transfer in the "Currency" field.
+6. Click on the "Transfer" button to complete the transfer.
+7. The money will be transferred from your account to Mike's account within 24 hours.<|im_end|>
+```
+
+### Sonic 
+
+
+```
+Based on the user message, here's a short story about a tiny hedgehog named Sonic:
+
+Once upon a time, there was a tiny hedgehog named Sonic. He lived in a small, cozy hole in the ground, where he spent most of his time playing hide-and-seek with his friends. One day, while playing hide-and-seek with his friends, Sonic stumbled upon a big hole in the ground and decided to explore it.
+
+As he walked deeper into the hole, Sonic noticed that it was filled with strange, glowing creatures. He cautiously approached one of the creatures, and as he got closer, he realized that it was actually a small, tiny hedgehog named Sonic himself.
+
+Sonic was fascinated by the tiny hedgehog and decided to take it home with him. He carefully placed the tiny hedgehog in a cozy hole in the ground, where he could always find it when he needed it.
+
+From that day on, Sonic and his tiny hedgehog became inseparable. They played hide-and-seek together, explored the hole in the ground together, and even learned to talk to each other. They lived happily ever after, until one day, Sonic's tiny hedgehog disappeared into the hole in the ground.
+
+Sonic's tiny hedgehog disappeared into the hole in the ground, never to be seen again. But Sonic never lost his love for his tiny hedgehog, and he continued to play hide-and-seek with his friends, always looking forward to seeing his tiny hedgehog again.<|im_end|>
+```
