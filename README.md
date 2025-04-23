@@ -51,3 +51,7 @@ Source: [code](sampling.py)
 - Выполняем сэмплирование
 
 Source: [code](nucleus_sampling.py)
+
+## Beam Search
+
+Source [code](early_stopped_beam_search.py)
